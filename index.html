@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Name" content="Solicitud de Seguro" />
+    <meta name="Author" content="FaJuEs" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Seguro No Pagamos Cooperativa</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="titulo">Seguro No Pagamos Cooperativa</p>
+      </div>
+    </header>
+    <h1>Solicitud de Seguro</h1>
+
+    <form action="https://formsubmit.co/fabiescu2404@gmail.com" method="POST">
+      <label for="nombre"><h4>Nombre:</h4></label>
+      <input type="text" id="nombre" required /><br /><br />
+
+      <label for="apellido"><h4>Apellido:</h4></label>
+      <input type="text" id="apellido" required /><br /><br />
+
+      <label for="dni"><h4>DNI:</h4></label>
+      <input type="number" id="dni" required /><br /><br />
+
+      <label for="email"><h4>Email:</h4></label>
+      <input type="email" id="email" required /><br /><br />
+
+      <label for="telefono"><h4>Teléfono:</h4></label>
+      <input type="number" id="telefono" required /><br /><br />
+
+      <label for="tipoSeguro"><h4>Tipo de seguro:</h4></label>
+      <select id="tipoSeguro" onclick="mostrarValorSeguro()">
+        <option value="Basico">Básico</option>
+        <option value="Intermedio">Intermedio</option>
+        <option value="Premium">Premium</option></select
+      ><br /><br />
+
+      <label for="valorSeguro"><h4>Valor del seguro:</h4></label>
+      <span id="valorSeguro"></span><br /><br />
+
+      <!--<input type="submit" value="Enviar" />-->
+      <button type="submit" id="enviarSolicitud">Enviar Solicitud</button>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
